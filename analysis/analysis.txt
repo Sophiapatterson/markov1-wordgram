@@ -1,4 +1,4 @@
-YOUR NAME and YOUR NETID
+Sophia Patterson swp17
 
 Run WordGramDriver for wordgrams of size 2-10 and record
 the number of WordGram values/objects that occur more than
@@ -15,13 +15,13 @@ values of WSIZE
 WSIZE    # duplicates
 2        60,453
 3        10,756
-4
-5
-6
-7
-8
-9
-10
+4        1,987
+5        667
+6        362
+7        226
+8		 151
+9		 105
+10		 73
 
 =====
 Explain in your own words the conceptual differences between 
@@ -30,11 +30,16 @@ Answer these questions:
 
 (1) Why the results of these methods should be the same in 
 terms of changes made to the HashSet parameter passed to each method.
+Both methods should be the same because they're processing the same data. 
 
 (2) What are the conceptual differences between the two
 benchmarking methods
+The first benchmark method creates a new wordgram every time the for loop executes, whereas the benchmarkshift 
+method creates only one wordgram which is updated via the while loop. 
 
 (3) Is the total amount of memory allocated for arrays
 the same or different in the two methods? Account for
 arrays created in the methods and arrays created by
 WordGram objects. Try to be quantitative in answering.
+The first benchmark method requires more space than the second. This is due to the fact that significantly
+more wordgrams are created in benchmark, and benchmarkshift only creates one wordgram.
